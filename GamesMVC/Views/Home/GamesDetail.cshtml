@@ -1,0 +1,21 @@
+@model UWS.Shared.Game
+@{
+  ViewData["Title"] =  Model.GameName;
+}
+
+<h2>Game Detail</h2>
+<hr />
+<div class="text-center">
+<img class="p-3 bg-secondary border border-light img-thumbnail" src="~/gameimages/game@(Model.GameID).png" height="200px" width="200px" alt="image"/>
+  <dl class="dl-horizontal">
+    <dt>Game Rank</dt>
+    <dd>@Model.GameID</dd>
+    <dt>Product Name</dt>
+    <dd>@Model.GameName</dd>
+    <dt>Category ID</dt>
+    <dd>@Model.CategoryID</dd>
+    <dt>Total Sales</dt>
+    <dd>@Model.Sales.Value.ToString("#,###,###")</dd>
+    <!-- ToString("C")</dd> -->
+  </dl>
+</div>

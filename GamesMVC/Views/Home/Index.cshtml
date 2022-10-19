@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string currentItem = "";
+}
+<style>
+body{
+    background: -webkit-linear-gradient(left, #8E2DE2, #4A00E0);
+}
+.gradient_all{
+    background: -webkit-linear-gradient(left, #8E2DE2, #4A00E0);
+}
+</style>
+<hr />
+<hr />
+<hr />
+<div id="categories" class="carousel slide" data-ride="carousel" data-interval="3000" data-keyboard="true">
+    <ol class="carousel-indicators">
+        @for (int c = 0; c < 2; c++)
+        {
+            if (c == 0)
+            {
+                currentItem = "active";
+            }
+            else
+            {
+                currentItem = "";
+            }
+            <li data-target="#categories" data-slide-to="@c" class="@currentItem"></li>
+        }
+    </ol>
+    <div class="carousel-inner ">
+        @for (int c = 0; c < 2; c++)
+        {
+            if (c == 0)
+            {
+                currentItem = "active";
+            }
+            else
+            {
+                currentItem = "";
+            }
+            <div class="carousel-item @currentItem">
+                <img class="rounded d-block w-100 h-100" src="~/images/category@(Model.Categories[c].CategoryID).jpg"
+                    alt="@Model.Categories[c].CategoryName"/>
+                <div class="rounded carousel-caption d-none d-md-block bg-dark border border-light box-shadow">
+                    <h2 class="heading_text_style_all font-weight-bold">@Model.Categories[c].CategoryName games!</h2>
+                    <h3>We have had a total of @Model.VisitorCount visitors this month!</h3>
+                </div>
+            </div>
+        }
+    </div>
+    <a class="carousel-control-prev" href="#categories" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#categories" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<hr/>
+<div class="row bg-light">
+    <div class="col-md-12">
+        <h1 class="display-1 text-center heading_text_style_all font-weight-bold text-underline"><u>The Top selling Games List!</u></h1>
+        <div id="newspaper">
+        <!-- <table class="table">
+            <ul>
+                @foreach (var item in @Model.Games)
+                {
+                    <p>
+                        <a asp-controller="Home" asp-action="GamesDetail" asp-route-id="@item.GameID">
+                            @item.GameID.
+                            @item.GameName Sales
+                            @item.Sales
+                        </a>
+                    </p>
+                }
+            </ul>
+            </table> -->
+
+    <table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                <h2 class="heading_text_style_all font-weight-bold">Rank<h2>
+            </th>
+            <th>
+                <h2 class="heading_text_style_all font-weight-bold"> Game Name</h2>
+            </th>
+            <th>
+               <h2 class="heading_text_style_all font-weight-bold"> Sales</h2>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in @Model.Games) {
+        <tr class="googlefont font-weight-bold">
+            <td>
+                @item.GameID
+            </td>
+            <td>
+                @item.GameName
+            </td>
+            <td>
+                @item.Sales.ToString("#,###,###")
+            </td>
+            <td>
+                
+                <a class="pt-1 pb-1 px-1 bg-dark text-light" asp-action="GamesDetail" asp-route-id="@item.GameID">Details</a>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div class="row justify-content-center">
+    <div class="col-md-12 mb-1 ">
+        <div class="pb-1 gradient_all rounded">
+        <h1 class=" text-light text-center heading_text_style_all font-weight-bold">Game Search</h1>
+        <p class="text-light text-center googlefont font-weight-bold">For more information about a game, please enter the rank of the game below</p>
+        <form class="text-center googlefont" asp-action="GamesDetail" asp-route-id="" method="get">
+            <p class="lead"><input type="int" name="id" placeholder="Enter a game number" />
+                <input class="bg-dark text-light"type="submit" />
+            </p>
+        </form>
+        </div>
+    </div>
+</div>
+

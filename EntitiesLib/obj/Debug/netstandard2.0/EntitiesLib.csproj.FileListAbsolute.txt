@@ -1,0 +1,10 @@
+D:\Honors\Study Project\EntitiesLib\obj\Debug\netstandard2.0\EntitiesLib.csproj.AssemblyReference.cache
+D:\Honors\Study Project\EntitiesLib\obj\Debug\netstandard2.0\EntitiesLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Honors\Study Project\EntitiesLib\obj\Debug\netstandard2.0\EntitiesLib.AssemblyInfoInputs.cache
+D:\Honors\Study Project\EntitiesLib\obj\Debug\netstandard2.0\EntitiesLib.AssemblyInfo.cs
+D:\Honors\Study Project\EntitiesLib\obj\Debug\netstandard2.0\EntitiesLib.csproj.CoreCompileInputs.cache
+D:\Honors\Study Project\EntitiesLib\bin\Debug\netstandard2.0\EntitiesLib.deps.json
+D:\Honors\Study Project\EntitiesLib\bin\Debug\netstandard2.0\EntitiesLib.dll
+D:\Honors\Study Project\EntitiesLib\bin\Debug\netstandard2.0\EntitiesLib.pdb
+D:\Honors\Study Project\EntitiesLib\obj\Debug\netstandard2.0\EntitiesLib.dll
+D:\Honors\Study Project\EntitiesLib\obj\Debug\netstandard2.0\EntitiesLib.pdb

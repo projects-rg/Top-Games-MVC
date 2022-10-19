@@ -1,0 +1,13 @@
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.csproj.AssemblyReference.cache
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.AssemblyInfoInputs.cache
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.AssemblyInfo.cs
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.csproj.CoreCompileInputs.cache
+D:\Honors\Study Project\ContextLib\bin\Debug\netstandard2.1\ContextLib.deps.json
+D:\Honors\Study Project\ContextLib\bin\Debug\netstandard2.1\ContextLib.dll
+D:\Honors\Study Project\ContextLib\bin\Debug\netstandard2.1\ContextLib.pdb
+D:\Honors\Study Project\ContextLib\bin\Debug\netstandard2.1\EntitiesLib.dll
+D:\Honors\Study Project\ContextLib\bin\Debug\netstandard2.1\EntitiesLib.pdb
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.csproj.CopyComplete
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.dll
+D:\Honors\Study Project\ContextLib\obj\Debug\netstandard2.1\ContextLib.pdb
